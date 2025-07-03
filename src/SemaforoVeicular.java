@@ -1,6 +1,7 @@
 public class SemaforoVeicular extends Semaforo {
-    public SemaforoVeicular(String cor) {
-        super (cor);
+    public SemaforoVeicular(String cor, String nome) {
+        super (cor, nome);
+        status();
     }
 
     @Override
@@ -15,6 +16,8 @@ public class SemaforoVeicular extends Semaforo {
             case "amarelo":
                 this.cor = "vermelho";
                 break;
+        
         }
+        status();
     }
 }
